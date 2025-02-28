@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
+import { Pensamento } from '../pensamento';
 
 @Component({
   selector: 'app-criar-pensamento',
@@ -8,21 +9,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./criar-pensamento.component.css'],
 })
 export class CriarPensamentoComponent implements OnInit {
-  pensamento: any;
 
   constructor(private router: Router) {}
   ngOnInit(): void {
-    this.pensamentos();
   }
 
-  pensamentos() {
-    this.pensamento = {
-      id: '1',
-      conteudo: 'Coloque seu pensamento',
-      autoria: 'Diga o autor',
-      modelo: '',
-    };
-  }
+  pensamento: Pensamento = {
+    id: 1,
+    conteudo: 'Aprendendo Angular',
+    autoria: 'Dev',
+    modelo: 'modelo1'
+}
 
 
   salvar() {

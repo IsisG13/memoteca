@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { Route, Router } from '@angular/router';
+import { Pensamento } from '../pensamento';
 
 @Component({
   selector: 'app-pensamentos',
@@ -9,10 +10,11 @@ import { Route, Router } from '@angular/router';
 })
 export class PensamentosComponent implements OnInit{
 
-  @Input() pensamento = {
-    conteudo: '',
-    autoria: '',
-    modelo: ''
+  @Input() pensamento: Pensamento = {
+    id: 0,
+    conteudo: 'A morte do autotune',
+    autoria: 'matue',
+    modelo: 'modelo2'
   }
 
   ngOnInit(): void { }
