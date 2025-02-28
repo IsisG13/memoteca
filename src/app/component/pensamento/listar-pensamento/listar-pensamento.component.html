@@ -4,6 +4,8 @@
     <button (click)="adicionar()" class="botao">Adicionar pensamento</button>
   </header>
   <div class="mural">
-    <app-pensamentos></app-pensamentos>
+    <div *ngFor="let pensamento of listaPensamentos">
+      <app-pensamentos [pensamento]="pensamento"></app-pensamentos>
+    </div>
   </div>
 </section>

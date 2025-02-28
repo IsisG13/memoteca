@@ -20,7 +20,7 @@ export class CriarPensamentoComponent implements OnInit {
       id: '1',
       conteudo: 'Coloque seu pensamento',
       autoria: 'Diga o autor',
-      modelo: 'modelo1',
+      modelo: '',
     };
   }
 

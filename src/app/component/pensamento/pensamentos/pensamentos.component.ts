@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
 import { Route, Router } from '@angular/router';
 
@@ -8,10 +8,11 @@ import { Route, Router } from '@angular/router';
   styleUrls: ['./pensamentos.component.css']
 })
 export class PensamentosComponent implements OnInit{
-  pensamento = {
-    conteudo: 'Conteudo para teste',
-    autoria: 'Digite o autor',
-    modelo: 'modelo1'
+
+  @Input() pensamento = {
+    conteudo: '',
+    autoria: '',
+    modelo: ''
   }
 
   ngOnInit(): void { }
