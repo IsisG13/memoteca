@@ -1,9 +1,14 @@
-<div class="container ff-inter">
-  <header class="header">
-    <h2> Meu Mural </h2>
+<section class="ff-inter pensamento {{ pensamento.modelo }}">
+    <img src="/assets/imagens/{{ pensamento.modelo }}.png" alt="" />
+    <p class="conteudo">{{ pensamento.conteudo }}</p>
+    <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
 
-    <div>
-      <button (click)="adicionar()" class="botao">Adicionar pensamento</button>
+    <div class="acoes">
+      <button class="botao-excluir">
+        <img src="../../../../assets/imagens/icone-excluir.png" alt="Icone excluir" />
+      </button>
+      <button class="botao-editar">
+        <img src="../../../../assets/imagens/icone-editar.png" alt="Icone editar" />
+      </button>
     </div>
-  </header>
-  </div>
+</section>

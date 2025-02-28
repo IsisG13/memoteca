@@ -7,12 +7,15 @@ import { Route, Router } from '@angular/router';
   templateUrl: './pensamentos.component.html',
   styleUrls: ['./pensamentos.component.css']
 })
-export class PensamentosComponent {
-
-  constructor(private router: Router) {}
-
-  adicionar() {
-    this.router.navigate(['./adicionar-pensamento']);
+export class PensamentosComponent implements OnInit{
+  pensamento = {
+    conteudo: 'Conteudo para teste',
+    autoria: 'Digite o autor',
+    modelo: 'modelo1'
   }
+
+  ngOnInit(): void { }
+
+  constructor() { }
 }
 

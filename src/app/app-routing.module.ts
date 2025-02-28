@@ -1,13 +1,13 @@
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CriarPensamentoComponent } from './component/pensamento/criar-pensamento/criar-pensamento.component';
-import { PensamentosComponent } from './component/pensamento/pensamentos/pensamentos.component';
+import { ListarPensamentoComponent } from './component/pensamento/listar-pensamento/listar-pensamento.component';
 
 const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'adicionar-pensamento'
+    redirectTo: 'pensamentos'
   },
   {
     path: 'adicionar-pensamento',
@@ -15,7 +15,7 @@ const routes: Routes = [
   },
   {
     path: 'pensamentos',
-    component: PensamentosComponent
+    component: ListarPensamentoComponent
   }
 ];
 

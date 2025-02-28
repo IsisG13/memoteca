@@ -8,15 +8,22 @@ import { Router } from '@angular/router';
   styleUrls: ['./criar-pensamento.component.css'],
 })
 export class CriarPensamentoComponent implements OnInit {
-  constructor(private router: Router) {}
-  ngOnInit(): void {}
+  pensamento: any;
 
-  pensamento = {
-    id: '1',
-    conteudo: 'Isso é serio',
-    autoria: 'Matuê',
-    modelo: '',
+  constructor(private router: Router) {}
+  ngOnInit(): void {
+    this.pensamentos();
   }
+
+  pensamentos() {
+    this.pensamento = {
+      id: '1',
+      conteudo: 'Coloque seu pensamento',
+      autoria: 'Diga o autor',
+      modelo: 'modelo1',
+    };
+  }
+
 
   salvar() {
     console.log(this.pensamento)
@@ -25,6 +32,7 @@ export class CriarPensamentoComponent implements OnInit {
 
   cancelar() {
     console.log('cancelado')
+    this.router.navigate(['./pensamentos']);
   }
 
   // adicionarPensamento!: FormGroup;
@@ -41,11 +49,11 @@ export class CriarPensamentoComponent implements OnInit {
   // }
 
   // salvar() {
-  //   if(this.adicionarPensamento.valid) {
-  //     this.router.navigate(['./pensamentos']);
-  //   } else {
-  //     console.log("Preencha todos os campos")
-  //   }
-  //   console.log(this.pensamentoCriado);
+    // if(this.adicionarPensamento.valid) {
+    //   this.router.navigate(['./pensamentos']);
+    // } else {
+    //   console.log("Preencha todos os campos")
+    // }
+    // console.log(this.pensamentoCriado);
   // }
 }
