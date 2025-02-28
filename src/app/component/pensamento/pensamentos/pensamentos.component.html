@@ -1,5 +1,5 @@
-<section class="ff-roboto-mono pensamento {{ pensamento.modelo }}">
-    <img src="/assets/imagens/{{ pensamento.modelo }}.png" alt="" />
+<section class="pensamento {{ pensamento.modelo }} ff-roboto-mono" [ngClass]="larguraPensamento()">
+  <img src="/assets/imagens/{{ pensamento.modelo }}.png" alt="" />
     <p class="conteudo">{{ pensamento.conteudo }}</p>
     <p class="autoria"><b>{{ pensamento.autoria }}</b></p>
 
