@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http'
 })
 export class PensamentoService {
 
-  constructor(http: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
 
 }
