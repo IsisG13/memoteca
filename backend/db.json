@@ -1,16 +1,10 @@
 {
   "pensamentos": [
     {
-      "id": "1",
-      "conteudo": "Iniciando teste com o json",
-      "autoria": "Isis",
-      "modelo": "modelo1"
-    },
-    {
       "id": "2",
-      "conteudo": "De longe eu to de perto",
+      "conteudo": "Vou deixando a minha insanidade e minha sanidade formar um complo pra me assassinar enquanto eu...",
       "autoria": "Matuê",
-      "modelo": "modelo3"
+      "modelo": "modelo1"
     },
     {
       "id": "3",
@@ -22,6 +16,12 @@
       "id": "e5d2",
       "conteudo": "se eu parar o sangue esfria",
       "autoria": "Matuê - Veigh",
+      "modelo": "modelo1"
+    },
+    {
+      "id": "46de",
+      "conteudo": "He's a really cool guy, he's got a cool shirt He's got cool shoes, did I mention the shirt?",
+      "autoria": "Bo Burnham",
       "modelo": "modelo1"
     }
   ]

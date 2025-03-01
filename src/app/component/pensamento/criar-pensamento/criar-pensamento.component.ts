@@ -26,8 +26,9 @@ export class CriarPensamentoComponent implements OnInit {
 
   salvar() {
     console.log(this.pensamento)
-    this.service.criar(this.pensamento).subscribe()
-    this.router.navigate(['./pensamentos']);
+    this.service.criar(this.pensamento).subscribe(() => {
+      this.router.navigate(['./pensamentos']);
+    })
   }
 
   cancelar() {
